@@ -1,0 +1,57 @@
+.hover-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hover-icon:hover {
+    transform: scale(1.2);
+    /* Enlarges the icon slightly */
+    color: #f8d210;
+    /* Changes the color on hover */
+}
+
+
+.seats-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.seat-box {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+}
+
+.seat-box.booked {
+    background-color: red;
+}
+
+.seat-box.available {
+    background-color: rgb(80, 245, 80);
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 4rem;
+    margin: 1.5rem 0;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+}
+
+.social a i {
+    color: white;
+    font-size: larger;
+}
